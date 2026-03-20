@@ -1,1 +1,913 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"/><link rel="icon" href="/favicon.ico"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="theme-color" content="#000000"/><meta name="description" content="Yogesh Bhardwaj - Tech Lead / Coder"/><link rel="apple-touch-icon" href="/logo192.png"/><link rel="manifest" href="/manifest.json"/><title>Yog</title><link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet"><link href="/static/css/main.f34a56f7.chunk.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div><script>!function(e){function r(r){for(var n,f,l=r[0],i=r[1],a=r[2],c=0,s=[];c<l.length;c++)f=l[c],Object.prototype.hasOwnProperty.call(o,f)&&o[f]&&s.push(o[f][0]),o[f]=0;for(n in i)Object.prototype.hasOwnProperty.call(i,n)&&(e[n]=i[n]);for(p&&p(r);s.length;)s.shift()();return u.push.apply(u,a||[]),t()}function t(){for(var e,r=0;r<u.length;r++){for(var t=u[r],n=!0,l=1;l<t.length;l++){var i=t[l];0!==o[i]&&(n=!1)}n&&(u.splice(r--,1),e=f(f.s=t[0]))}return e}var n={},o={1:0},u=[];function f(r){if(n[r])return n[r].exports;var t=n[r]={i:r,l:!1,exports:{}};return e[r].call(t.exports,t,t.exports,f),t.l=!0,t.exports}f.m=e,f.c=n,f.d=function(e,r,t){f.o(e,r)||Object.defineProperty(e,r,{enumerable:!0,get:t})},f.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},f.t=function(e,r){if(1&r&&(e=f(e)),8&r)return e;if(4&r&&"object"==typeof e&&e&&e.__esModule)return e;var t=Object.create(null);if(f.r(t),Object.defineProperty(t,"default",{enumerable:!0,value:e}),2&r&&"string"!=typeof e)for(var n in e)f.d(t,n,function(r){return e[r]}.bind(null,n));return t},f.n=function(e){var r=e&&e.__esModule?function(){return e.default}:function(){return e};return f.d(r,"a",r),r},f.o=function(e,r){return Object.prototype.hasOwnProperty.call(e,r)},f.p="/";var l=this.webpackJsonpfrontend=this.webpackJsonpfrontend||[],i=l.push.bind(l);l.push=r,l=l.slice();for(var a=0;a<l.length;a++)r(l[a]);var p=i;t()}([])</script><script src="/static/js/2.625798f7.chunk.js"></script><script src="/static/js/main.7e72ab1f.chunk.js"></script></body></html>
+<!doctype html>
+<html lang="en" class="dark"
+    ><head
+        ><meta charset="utf-8" /><meta
+            content="width=device-width,initial-scale=1"
+            name="viewport"
+        /><title>The Neon Architect | Portfolio</title
+        ><script src="https://unpkg.com/react@18/umd/react.development.js"></script
+        ><script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script
+        ><script src="https://unpkg.com/history@5/umd/history.development.js"></script
+        ><script src="https://unpkg.com/react-router@6.3.0/umd/react-router.development.js"></script
+        ><script src="https://unpkg.com/react-router-dom@6.3.0/umd/react-router-dom.development.js"></script
+        ><script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script
+        ><link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+        /><link
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+            rel="stylesheet"
+        /><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script
+        ><script id="tailwind-config">
+            tailwind.config = {
+                darkMode: "class",
+                theme: {
+                    extend: {
+                        colors: {
+                            surface: "#060e20",
+                            "primary-fixed-dim": "#a27cff",
+                            "on-tertiary-container": "#19001e",
+                            "tertiary-container": "#de4bf4",
+                            "on-tertiary": "#3d0047",
+                            "on-primary-container": "#2b006e",
+                            secondary: "#53ddfc",
+                            "on-secondary-fixed": "#003a45",
+                            "on-secondary-container": "#ecfaff",
+                            "secondary-fixed": "#65e1ff",
+                            "tertiary-fixed": "#f487ff",
+                            "secondary-fixed-dim": "#48d4f3",
+                            "primary-fixed": "#ae8dff",
+                            primary: "#8B5CF6",
+                            "error-container": "#a70138",
+                            "surface-bright": "#1f2b49",
+                            "secondary-container": "#00687a",
+                            "on-surface-variant": "#a3aac4",
+                            "inverse-surface": "#faf8ff",
+                            "on-background": "#dee5ff",
+                            background: "#060e20",
+                            "on-error-container": "#ffb2b9",
+                            "outline-variant": "#40485d",
+                            "surface-variant": "#192540",
+                            "on-secondary-fixed-variant": "#005969",
+                            outline: "#6d758c",
+                            "on-tertiary-fixed-variant": "#660075",
+                            "on-surface": "#dee5ff",
+                            "on-primary-fixed-variant": "#370086",
+                            "tertiary-dim": "#ec63ff",
+                            tertiary: "#ec63ff",
+                            "on-error": "#490013",
+                            "on-secondary": "#004b58",
+                            "on-primary": "#39008c",
+                            "on-primary-fixed": "#000000",
+                            "surface-dim": "#060e20",
+                            error: "#ff6e84",
+                            "surface-tint": "#8B5CF6",
+                            "inverse-primary": "#6e3bd7",
+                            "tertiary-fixed-dim": "#ef6eff",
+                            "surface-container-highest": "#192540",
+                            "surface-container-high": "#141f38",
+                            "surface-container-lowest": "#000000",
+                            "on-tertiary-fixed": "#300038",
+                            "primary-container": "#ae8dff",
+                            "error-dim": "#d73357",
+                            "surface-container": "#0f1930",
+                            "inverse-on-surface": "#4d556b",
+                            "primary-dim": "#8455ef",
+                            "secondary-dim": "#40ceed",
+                            "surface-container-low": "#091328",
+                        },
+                        fontFamily: {
+                            headline: ["Space Grotesk"],
+                            body: ["Inter"],
+                            label: ["Space Grotesk"],
+                        },
+                        borderRadius: {
+                            DEFAULT: "0.5rem",
+                            lg: "0.5rem",
+                            xl: "0.75rem",
+                            full: "9999px",
+                        },
+                    },
+                },
+            };</script
+        ><style>
+            .material-symbols-outlined {
+                font-variation-settings:
+                    "FILL" 0,
+                    "wght" 400,
+                    "GRAD" 0,
+                    "opsz" 24;
+            }
+            .glass-card {
+                background: rgba(25, 37, 64, 0.4);
+                backdrop-filter: blur(12px);
+                border: 1px solid rgba(64, 72, 93, 0.15);
+            }
+            .glow-hover:hover {
+                box-shadow: 0 0 20px rgba(139, 92, 246, 0.3);
+                border-color: rgba(139, 92, 246, 0.3);
+            }
+            .text-glow {
+                text-shadow: 0 0 10px rgba(139, 92, 246, 0.5);
+            }
+            .syntax-bg {
+                background-image: radial-gradient(
+                    circle at 2px 2px,
+                    rgba(139, 92, 246, 0.05) 1px,
+                    transparent 0
+                );
+                background-size: 24px 24px;
+            }
+            .scanline {
+                width: 100%;
+                height: 2px;
+                background: linear-gradient(
+                    to right,
+                    transparent,
+                    rgba(83, 221, 252, 0.2),
+                    transparent
+                );
+                position: absolute;
+                animation: scan 4s linear infinite;
+            }
+            @keyframes scan {
+                0% {
+                    top: 0;
+                }
+                100% {
+                    top: 100%;
+                }
+            }
+            body {
+                background-color: #060e20;
+                color: #dee5ff;
+                font-family: Inter, sans-serif;
+            }
+            .glass-panel {
+                background: rgba(25, 37, 64, 0.4);
+                backdrop-filter: blur(16px);
+                -webkit-backdrop-filter: blur(16px);
+            }
+        </style></head
+    ><script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=G-VVMLYF13NG"
+    ></script
+    ><script>
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        ((window.dataLayer = window.dataLayer || []),
+            gtag("js", new Date()),
+            gtag("config", "G-VVMLYF13NG"));</script
+    ><body class="bg-surface text-on-surface font-body selection:bg-primary/30"
+        ><div id="root"></div
+        ><script type="text/babel">
+            const { useState, useEffect } = React;
+            const { createRoot } = ReactDOM;
+            const {
+                MemoryRouter,
+                Routes,
+                Route,
+                Link,
+                useNavigate,
+                useLocation,
+            } = ReactRouterDOM;
+
+            // Components
+            const Navbar = () => {
+                const location = useLocation();
+                const isActive = (path) => location.pathname === path;
+
+                return (
+                    <nav className='fixed top-0 w-full z-50 bg-[#060e20]/80 backdrop-blur-xl shadow-[0_0_20px_rgba(186,158,255,0.06)] border-b border-outline-variant/10'>
+                        <div className='flex justify-between items-center px-8 h-16 max-w-7xl mx-auto'>
+                            <Link
+                                to='/'
+                                className='text-xl font-bold tracking-tighter text-[#ba9eff] font-headline uppercase'
+                            >
+                                The Neon Architect
+                            </Link>
+                            <div className='hidden md:flex items-center gap-8'>
+                                <Link
+                                    to='/'
+                                    className={`font-headline tracking-tight font-bold uppercase text-sm transition-colors ${isActive("/") ? "text-[#ba9eff] border-b-2 border-[#ba9eff] pb-1" : "text-slate-400 hover:text-white"}`}
+                                >
+                                    Home
+                                </Link>
+                                <Link
+                                    to='/projects'
+                                    className={`font-headline tracking-tight font-bold uppercase text-sm transition-colors ${isActive("/projects") ? "text-[#ba9eff] border-b-2 border-[#ba9eff] pb-1" : "text-slate-400 hover:text-white"}`}
+                                >
+                                    Projects
+                                </Link>
+                                <Link
+                                    to='/experience'
+                                    className={`font-headline tracking-tight font-bold uppercase text-sm transition-colors ${isActive("/experience") ? "text-[#ba9eff] border-b-2 border-[#ba9eff] pb-1" : "text-slate-400 hover:text-white"}`}
+                                >
+                                    Experience
+                                </Link>
+                                <Link
+                                    to='/about'
+                                    className={`font-headline tracking-tight font-bold uppercase text-sm transition-colors ${isActive("/about") ? "text-[#ba9eff] border-b-2 border-[#ba9eff] pb-1" : "text-slate-400 hover:text-white"}`}
+                                >
+                                    About
+                                </Link>
+                            </div>
+                            <button className='bg-gradient-to-r from-primary to-primary-dim text-on-primary px-6 py-2 rounded font-headline font-bold uppercase text-xs tracking-wider glow-hover transition-all active:scale-95'>
+                                Let's Talk
+                            </button>
+                        </div>
+                    </nav>
+                );
+            };
+
+            const FloatingSidebar = () => {
+                const location = useLocation();
+                return (
+                    <aside className='fixed right-4 top-1/2 -translate-y-1/2 rounded-full py-6 flex flex-col items-center gap-8 px-3 bg-[#091328]/90 backdrop-blur-lg shadow-[0_0_30px_rgba(83,221,252,0.1)] z-40 hidden md:flex'>
+                        <a
+                            className='group relative text-slate-500 hover:text-[#53ddfc] transition-transform hover:scale-110 flex flex-col items-center gap-1'
+                            href='#'
+                        >
+                            <span className='material-symbols-outlined'>
+                                mail
+                            </span>
+                            <span className='absolute right-full mr-4 px-2 py-1 bg-surface-variant text-[10px] uppercase font-label tracking-widest text-secondary opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap'>
+                                Contact
+                            </span>
+                        </a>
+                        <a
+                            className='group relative text-slate-500 hover:text-[#53ddfc] transition-transform hover:scale-110 flex flex-col items-center gap-1'
+                            href='#'
+                        >
+                            <span className='material-symbols-outlined'>
+                                accessibility
+                            </span>
+                            <span className='absolute right-full mr-4 px-2 py-1 bg-surface-variant text-[10px] uppercase font-label tracking-widest text-secondary opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap'>
+                                Access
+                            </span>
+                        </a>
+                        <Link
+                            to='/experience'
+                            className={`group relative transition-transform hover:scale-110 flex flex-col items-center gap-1 ${location.pathname === "/experience" ? "text-[#53ddfc]" : "text-slate-500 hover:text-[#53ddfc]"}`}
+                        >
+                            <span className='material-symbols-outlined'>
+                                description
+                            </span>
+                            <span className='absolute right-full mr-4 px-2 py-1 bg-surface-variant text-[10px] uppercase font-label tracking-widest text-secondary opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap'>
+                                Resume
+                            </span>
+                        </Link>
+                    </aside>
+                );
+            };
+
+            const Footer = () => (
+                <footer className='w-full border-t border-[#40485d]/15 mt-20 bg-[#060e20]'>
+                    <div className='max-w-7xl mx-auto px-8 py-12 flex flex-col md:flex-row justify-between items-center gap-6'>
+                        <div className='font-mono text-[#53ddfc] text-sm tracking-tighter uppercase font-bold'>
+                            Yogesh Bhardwaj // The Neon Architect
+                        </div>
+                        <div className='flex gap-8'>
+                            <a
+                                className='font-headline text-xs tracking-normal text-slate-500 hover:text-[#ba9eff] transition-colors'
+                                href='#'
+                            >
+                                GitHub
+                            </a>
+                            <a
+                                className='font-headline text-xs tracking-normal text-slate-500 hover:text-[#ba9eff] transition-colors'
+                                href='#'
+                            >
+                                LinkedIn
+                            </a>
+                            <a
+                                className='font-headline text-xs tracking-normal text-slate-500 hover:text-[#ba9eff] transition-colors'
+                                href='#'
+                            >
+                                Twitter
+                            </a>
+                        </div>
+                        <div className='font-headline text-xs tracking-normal text-slate-500'>
+                            © 2026 yog.uno All rights reserved.
+                        </div>
+                    </div>
+                </footer>
+            );
+
+            // Page Components
+            const HomePage = () => {
+                return (
+                    <div className='relative syntax-bg overflow-hidden pt-16'>
+                        <section className='relative min-h-screen flex items-center px-8'>
+                            <div className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full select-none pointer-events-none opacity-[0.03] flex flex-col items-center z-0'>
+                                <div className='text-[25vw] font-headline font-black leading-none tracking-tighter uppercase whitespace-nowrap'>
+                                    Architect
+                                </div>
+                                <div className='text-[25vw] font-headline font-black leading-none tracking-tighter uppercase whitespace-nowrap translate-x-1/4'>
+                                    Systems
+                                </div>
+                            </div>
+                            <div className='max-w-7xl mx-auto w-full grid grid-cols-12 gap-8 items-center relative z-10'>
+                                <div className='col-span-12 lg:col-span-8 space-y-10'>
+                                    <div className='space-y-4'>
+                                        <div className='inline-flex items-center gap-2 px-3 py-1 bg-surface-container-high rounded-sm text-secondary font-label text-[10px] uppercase tracking-[0.2em] border border-outline-variant/20'>
+                                            <span className='w-2 h-2 rounded-full bg-secondary animate-pulse'></span>
+                                            Available for Architecture Review
+                                        </div>
+                                        <h1 className='text-6xl md:text-9xl font-headline font-bold text-on-background leading-[0.9] tracking-tight group'>
+                                            The Neon <br />
+                                            <span className='relative'>
+                                                Architect
+                                                <span className='absolute -inset-1 block bg-primary/10 blur-xl opacity-0 group-hover:opacity-100 transition-opacity'></span>
+                                            </span>
+                                        </h1>
+                                        <div className='mt-8 flex items-center gap-4'>
+                                            <span className='h-[2px] w-24 bg-primary'></span>
+                                            <span className='font-mono text-primary uppercase tracking-[0.4em] text-sm'>
+                                                Command Center_
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div className='grid grid-cols-1 md:grid-cols-2 gap-8 items-start'>
+                                        <p className='text-xl text-on-surface-variant leading-relaxed font-body'>
+                                            Senior Software Engineer building
+                                            high-performance{" "}
+                                            <span className='text-on-surface font-semibold underline decoration-primary/40 decoration-2 underline-offset-4'>
+                                                full-stack ecosystems
+                                            </span>
+                                            . Transforming complex logic into
+                                            elegant architecture.
+                                        </p>
+                                        <div className='glass-card p-6 border border-outline-variant/20 rounded-xl relative overflow-hidden hidden md:block'>
+                                            <div className='scanline'></div>
+                                            <div className='flex items-center justify-between mb-4 text-[10px] font-mono text-slate-500'>
+                                                <div className='flex gap-2'>
+                                                    <div className='w-3 h-3 rounded-full bg-red-500/30'></div>
+                                                    <div className='w-3 h-3 rounded-full bg-yellow-500/30'></div>
+                                                    <div className='w-3 h-3 rounded-full bg-green-500/30'></div>
+                                                </div>
+                                                SYSTEM_MONITOR.EXE
+                                            </div>
+                                            <div className='space-y-2 font-mono text-[11px] text-secondary/80'>
+                                                <div className='flex justify-between'>
+                                                    <span>CPU_LOAD:</span>
+                                                    <span className='text-green-500'>
+                                                        OPTIMAL
+                                                    </span>
+                                                </div>
+                                                <div className='flex justify-between'>
+                                                    <span>LATENCY:</span>
+                                                    <span className='text-primary'>
+                                                        &lt; 10ms
+                                                    </span>
+                                                </div>
+                                                <div className='flex justify-between'>
+                                                    <span>UPTIME:</span>
+                                                    <span>99.98%</span>
+                                                </div>
+                                                <div className='w-full bg-surface-container h-1 rounded-full mt-2 overflow-hidden'>
+                                                    <div className='bg-primary h-full w-[85%] animate-pulse'></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className='flex flex-wrap gap-6 pt-4'>
+                                        <Link
+                                            to='/projects'
+                                            className='bg-gradient-to-br from-primary to-primary-dim text-on-primary px-10 py-5 rounded font-headline font-bold uppercase tracking-widest text-sm glow-hover transition-all flex items-center gap-3 group shadow-[0_0_30px_rgba(186,158,255,0.2)]'
+                                        >
+                                            Explore Work
+                                            <span className='material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform'>
+                                                terminal
+                                            </span>
+                                        </Link>
+                                        <Link
+                                            to='/experience'
+                                            className='bg-surface-container-high/50 backdrop-blur border border-outline-variant/30 text-on-surface px-10 py-5 rounded font-headline font-bold uppercase tracking-widest text-sm hover:bg-surface-container-highest transition-all flex items-center gap-3'
+                                        >
+                                            Documentation
+                                            <span className='material-symbols-outlined text-sm text-secondary'>
+                                                file_download
+                                            </span>
+                                        </Link>
+                                    </div>
+                                </div>
+                                <div className='col-span-12 lg:col-span-4 relative mt-12 lg:mt-0 flex justify-center lg:justify-end'>
+                                    <div className='relative w-full max-w-md aspect-[4/5]'>
+                                        <div className='relative z-20 w-full h-full rounded-2xl overflow-hidden shadow-2xl group border border-outline-variant/30'>
+                                            <img
+                                                alt='Senior Software Engineer Portrait'
+                                                className='w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000 opacity-90 group-hover:opacity-100 scale-110 group-hover:scale-105'
+                                                src='./static/img/portomagna.jpg'
+                                            />
+                                            <div className='absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-60'></div>
+                                            <div className='absolute -bottom-6 -left-12 glass-card p-6 rounded-xl border border-primary/40 shadow-2xl max-w-[280px] z-30 transform group-hover:-translate-y-2 transition-transform duration-500'>
+                                                <div className='text-primary font-mono text-[10px] mb-2 font-bold tracking-widest uppercase'>
+                                                    System.Initializer()
+                                                </div>
+                                                <code className='text-[11px] font-mono text-secondary leading-tight block'>
+                                                    class Architect &#123;
+                                                    <br />
+                                                    &nbsp;&nbsp;constructor()
+                                                    &#123;
+                                                    <br />
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;this.mode
+                                                    = 'neon';
+                                                    <br />
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;this.stack
+                                                    = 'infinite';
+                                                    <br />
+                                                    &nbsp;&nbsp;&#125;
+                                                    <br />
+                                                    &#125;
+                                                </code>
+                                            </div>
+                                        </div>
+                                        <div className='absolute -top-10 -right-10 w-48 h-48 border border-secondary/20 rounded-full animate-[spin_20s_linear_infinite] pointer-events-none'></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                );
+            };
+
+            const ProjectsPage = () => {
+                return (
+                    <main className='pt-32 pb-20 px-8 max-w-7xl mx-auto'>
+                        <header className='mb-20'>
+                            <div className='flex items-center gap-4 mb-4'>
+                                <div className='h-[1px] w-12 bg-primary'></div>
+                                <span className='font-headline text-secondary tracking-[0.3em] uppercase text-xs font-bold'>
+                                    Portfolio Showcase
+                                </span>
+                            </div>
+                            <h1 className='font-headline text-6xl md:text-8xl font-bold tracking-tighter text-white mb-6'>
+                                Featured{" "}
+                                <span className='text-primary text-glow'>
+                                    Projects
+                                </span>
+                            </h1>
+                            <p className='max-w-2xl text-on-surface-variant text-lg leading-relaxed'>
+                                A curated selection of architectural software
+                                solutions, focusing on high-performance
+                                distributed systems, AI integration, and
+                                technical excellence.
+                            </p>
+                        </header>
+                        <div className='grid grid-cols-1 md:grid-cols-12 gap-8'>
+                            {/* Project 1 */}
+                            <div className='md:col-span-8 group'>
+                                <div className='glass-card rounded-xl overflow-hidden glow-hover transition-all duration-500 flex flex-col h-full bg-surface-container-low'>
+                                    <div className='relative h-96 w-full overflow-hidden'>
+                                        <img
+                                            alt='DeFi Analytics'
+                                            className='w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-105 group-hover:scale-100'
+                                            src='https://lh3.googleusercontent.com/aida-public/AB6AXuB2tC0QLFIMnApsXrx--oeuiEVO9Z1scE-LCXuwMbaPnOrr70Y0IU0rbQUeuN2o3hJv1GLla08GELtijWJoK-QHE6eF0DaV6XiydMgMH0KXQMjeWgdwc3EstKcfjPwL4-JooKUmVopWwBwT9d8sb97TaRb1cjxybKt-S1pfUoF_ixsr7fJzyWuXRymPIltL2h8wXxtGzmEnEQXuIhHlVy3-oc4JOXa9_Dv273GT_kATMMi3BxgyAZMEAcxgxDe0yhIQ8OGl15ogGFhK'
+                                        />
+                                        <div className='absolute inset-0 bg-gradient-to-t from-surface-container-low via-transparent to-transparent'></div>
+                                        <div className='absolute top-6 left-6 flex gap-2'>
+                                            <span className='bg-surface-container-lowest/80 backdrop-blur px-3 py-1 rounded text-[10px] font-headline font-bold text-secondary uppercase tracking-widest border border-outline-variant/30'>
+                                                Active
+                                            </span>
+                                            <span className='bg-surface-container-lowest/80 backdrop-blur px-3 py-1 rounded text-[10px] font-headline font-bold text-primary uppercase tracking-widest border border-outline-variant/30'>
+                                                System Architect
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div className='p-8 flex flex-col flex-grow'>
+                                        <div className='flex justify-between items-start mb-6'>
+                                            <div>
+                                                <h3 className='font-headline text-3xl font-bold text-white mb-2'>
+                                                    DeFi Analytics Platform
+                                                </h3>
+                                                <div className='flex flex-wrap gap-2 mb-4'>
+                                                    <span className='font-headline text-[10px] uppercase text-secondary bg-surface-variant px-2 py-1'>
+                                                        Next.js
+                                                    </span>
+                                                    <span className='font-headline text-[10px] uppercase text-secondary bg-surface-variant px-2 py-1'>
+                                                        Rust
+                                                    </span>
+                                                    <span className='font-headline text-[10px] uppercase text-secondary bg-surface-variant px-2 py-1'>
+                                                        PostgreSQL
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div className='flex gap-4'>
+                                                <span className='material-symbols-outlined text-on-surface-variant hover:text-primary cursor-pointer'>
+                                                    terminal
+                                                </span>
+                                                <span className='material-symbols-outlined text-on-surface-variant hover:text-primary cursor-pointer'>
+                                                    open_in_new
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <p className='text-on-surface-variant mb-8 text-balance leading-relaxed'>
+                                            Built a real-time analytics engine
+                                            processing over 10k transactions per
+                                            second. Solved significant latency
+                                            issues by implementing a custom
+                                            caching layer and optimizing Web3
+                                            provider handshakes.
+                                        </p>
+                                        <div className='mt-auto flex items-center gap-6'>
+                                            <a
+                                                className='font-headline text-xs font-bold uppercase tracking-widest text-primary hover:text-white transition-colors flex items-center gap-2'
+                                                href='#'
+                                            >
+                                                Case Study{" "}
+                                                <span className='material-symbols-outlined text-sm'>
+                                                    arrow_forward
+                                                </span>
+                                            </a>
+                                            <a
+                                                className='font-headline text-xs font-bold uppercase tracking-widest text-secondary hover:text-white transition-colors'
+                                                href='#'
+                                            >
+                                                Live Demo _
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            {/* Project 2 */}
+                            <div className='md:col-span-4 group'>
+                                <div className='glass-card rounded-xl overflow-hidden glow-hover transition-all duration-500 flex flex-col h-full bg-surface-container-low'>
+                                    <div className='relative h-64 w-full overflow-hidden'>
+                                        <img
+                                            alt='AI CRM'
+                                            className='w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700'
+                                            src='https://lh3.googleusercontent.com/aida-public/AB6AXuBdjFQ9AS_nbYia0VFqZj8M5LRspj1BsY3cXgG4odeDUqIOpF6g8SgZ48hzMNLX9HhU7lkhysmabbOCq-S7qPIztPBFkp6Sj9jRk9Jbfsyi6uqRclAyr2OTDGNlBvRtroupSmx8FW4WCN_O2R_Vzn2Ry_ltXGtNZHj8GuIMv3pMfohUfeapuZNt2EJo9QdmnqgxvuZS9WqywXdOtTx8hxunW2h4qRhME5qPjp1yqmUzffDVTgqoeu9jZiMUFqMFLQlp7bx732TABaZ7'
+                                        />
+                                        <div className='absolute inset-0 bg-gradient-to-t from-surface-container-low via-transparent to-transparent'></div>
+                                    </div>
+                                    <div className='p-8 flex flex-col flex-grow'>
+                                        <h3 className='font-headline text-2xl font-bold text-white mb-2'>
+                                            AI-Powered CRM
+                                        </h3>
+                                        <div className='flex flex-wrap gap-2 mb-6'>
+                                            <span className='font-headline text-[10px] uppercase text-secondary bg-surface-variant px-2 py-1'>
+                                                OpenAI
+                                            </span>
+                                            <span className='font-headline text-[10px] uppercase text-secondary bg-surface-variant px-2 py-1'>
+                                                Python
+                                            </span>
+                                        </div>
+                                        <p className='text-on-surface-variant mb-8 text-sm leading-relaxed'>
+                                            Automated lead scoring and sentiment
+                                            analysis using GPT-4, reducing
+                                            manual review time by 65% for
+                                            enterprise sales teams.
+                                        </p>
+                                        <div className='mt-auto'>
+                                            <a
+                                                className='font-headline text-xs font-bold uppercase tracking-widest text-primary hover:text-white transition-colors flex items-center gap-2'
+                                                href='#'
+                                            >
+                                                View Repository{" "}
+                                                <span className='material-symbols-outlined text-sm'>
+                                                    code
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </main>
+                );
+            };
+
+            const ExperiencePage = () => {
+                return (
+                    <main className='pt-32 pb-20 px-6 max-w-7xl mx-auto'>
+                        <header className='mb-20'>
+                            <h1 className='font-headline text-5xl md:text-7xl font-bold tracking-tight text-on-background mb-4 uppercase'>
+                                Experience{" "}
+                                <span className='text-secondary font-light'>
+                                    &amp;&amp;
+                                </span>{" "}
+                                Skills
+                            </h1>
+                            <p className='font-body text-on-surface-variant max-w-2xl text-lg leading-relaxed'>
+                                A decade of architecting high-performance
+                                systems and leading engineering teams through
+                                complex digital transformations.
+                            </p>
+                        </header>
+                        <div className='grid grid-cols-1 lg:grid-cols-12 gap-16'>
+                            <section className='lg:col-span-7 relative'>
+                                <div className='flex items-center gap-4 mb-12 text-primary'>
+                                    <span className='material-symbols-outlined text-3xl'>
+                                        terminal
+                                    </span>
+                                    <h2 className='font-headline text-2xl font-bold uppercase tracking-wider'>
+                                        Professional_Path
+                                    </h2>
+                                </div>
+                                <div className='absolute left-6 top-24 bottom-0 w-px bg-gradient-to-b from-primary via-outline-variant to-transparent opacity-30 hidden sm:block'></div>
+                                <div className='space-y-12'>
+                                    {[
+                                        {
+                                            title: "Lead Cloud Architect",
+                                            company:
+                                                "QUANTUM DYNAMICS SOLUTIONS",
+                                            period: "Jan 2021 — Present",
+                                            bullets: [
+                                                "Spearheaded the migration of legacy monolithic architectures to microservices using Go and Kubernetes.",
+                                                "Designed a real-time data engine handling over 5TB of telemetry daily.",
+                                                "Mentored a team of 15 engineers, establishing CI/CD best practices.",
+                                            ],
+                                        },
+                                        {
+                                            title: "Senior Fullstack Engineer",
+                                            company: "NEBULA SYSTEMS INC",
+                                            period: "Jun 2017 — Dec 2020",
+                                            bullets: [
+                                                "Architected a React-based enterprise dashboard with dynamic visualization components.",
+                                                "Implemented GraphQL API layers which reduced payload sizes by 60%.",
+                                            ],
+                                        },
+                                    ].map((job, idx) => (
+                                        <div
+                                            key={idx}
+                                            className='relative sm:pl-16 group'
+                                        >
+                                            <div className='absolute left-[21px] top-1.5 w-2.5 h-2.5 rounded-full bg-primary border-4 border-surface shadow-[0_0_10px_rgba(186,158,255,0.8)] hidden sm:block'></div>
+                                            <div className='glass-card p-8 rounded-xl transition-all duration-300 hover:bg-surface-variant/60'>
+                                                <div className='flex flex-col md:flex-row md:items-start justify-between gap-4 mb-6'>
+                                                    <div>
+                                                        <h3 className='font-headline text-xl font-bold text-white tracking-tight'>
+                                                            {job.title}
+                                                        </h3>
+                                                        <p className='font-label text-secondary text-sm font-medium tracking-wide'>
+                                                            {job.company}
+                                                        </p>
+                                                    </div>
+                                                    <span className='font-label text-xs uppercase tracking-widest bg-surface-container-highest px-3 py-1 rounded-full text-on-surface-variant border border-outline-variant/30'>
+                                                        {job.period}
+                                                    </span>
+                                                </div>
+                                                <ul className='space-y-3 font-body text-sm text-on-surface-variant'>
+                                                    {job.bullets.map((b, i) => (
+                                                        <li
+                                                            key={i}
+                                                            className='flex gap-3'
+                                                        >
+                                                            <span className='text-primary font-bold'>
+                                                                0{i + 1}
+                                                            </span>
+                                                            <span>{b}</span>
+                                                        </li>
+                                                    ))}
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    ))}
+                                </div>
+                            </section>
+                            <section className='lg:col-span-5 space-y-8'>
+                                <div className='flex items-center gap-4 mb-4 text-tertiary'>
+                                    <span className='material-symbols-outlined text-3xl'>
+                                        hub
+                                    </span>
+                                    <h2 className='font-headline text-2xl font-bold uppercase tracking-wider'>
+                                        Skill_Manifest
+                                    </h2>
+                                </div>
+                                <div className='bg-surface-container-low p-6 rounded-xl border border-outline-variant/10 shadow-lg'>
+                                    <h3 className='font-headline text-sm font-bold uppercase tracking-widest text-on-surface-variant mb-6 flex items-center gap-2'>
+                                        <span className='w-2 h-2 rounded-full bg-primary'></span>{" "}
+                                        Core_Languages
+                                    </h3>
+                                    <div className='space-y-6'>
+                                        {[
+                                            { l: "Go", p: 95 },
+                                            { l: "Python", p: 88 },
+                                            { l: "Rust", p: 60 },
+                                        ].map((skill) => (
+                                            <div
+                                                key={skill.l}
+                                                className='space-y-2'
+                                            >
+                                                <div className='flex justify-between font-label text-xs uppercase tracking-tighter'>
+                                                    <span>{skill.l}</span>
+                                                    <span className='text-secondary'>
+                                                        {skill.p}%
+                                                    </span>
+                                                </div>
+                                                <div className='h-1.5 w-full bg-surface-variant rounded-full overflow-hidden'>
+                                                    <div
+                                                        className='h-full bg-gradient-to-r from-primary to-secondary'
+                                                        style={{
+                                                            width: `${skill.p}%`,
+                                                        }}
+                                                    ></div>
+                                                </div>
+                                            </div>
+                                        ))}
+                                    </div>
+                                </div>
+                                <div className='bg-surface-container-lowest border border-outline-variant/30 rounded-lg overflow-hidden mt-4'>
+                                    <div className='bg-surface-container-high px-4 py-2 flex items-center justify-between'>
+                                        <div className='flex gap-1.5'>
+                                            <div className='w-2.5 h-2.5 rounded-full bg-[#ff5f56]'></div>
+                                            <div className='w-2.5 h-2.5 rounded-full bg-[#ffbd2e]'></div>
+                                            <div className='w-2.5 h-2.5 rounded-full bg-[#27c93f]'></div>
+                                        </div>
+                                        <span className='text-[10px] font-label uppercase text-on-surface-variant/60'>
+                                            skills.py
+                                        </span>
+                                    </div>
+                                    <div className='p-4 font-mono text-[11px] leading-relaxed'>
+                                        <span className='text-tertiary'>
+                                            class
+                                        </span>{" "}
+                                        <span className='text-secondary'>
+                                            Architect
+                                        </span>
+                                        :<br />
+                                        &nbsp;&nbsp;&nbsp;&nbsp;
+                                        <span className='text-tertiary'>
+                                            def
+                                        </span>{" "}
+                                        <span className='text-primary'>
+                                            __init__
+                                        </span>
+                                        (self):
+                                        <br />
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.focus
+                                        ={" "}
+                                        <span className='text-secondary'>
+                                            "Distributed Scalable Systems"
+                                        </span>
+                                        <br />
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.experience
+                                        ={" "}
+                                        <span className='text-secondary'>
+                                            10_YEARS
+                                        </span>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </main>
+                );
+            };
+
+            const AboutPage = () => {
+                return (
+                    <main>
+                        <header className='relative w-full h-[614px] flex items-end overflow-hidden mb-20 bg-surface-container-lowest'>
+                            <div className='absolute inset-0 z-0'>
+                                <img
+                                    alt='Atmospheric code'
+                                    className='w-full h-full object-cover opacity-20 mix-blend-screen'
+                                    src='https://lh3.googleusercontent.com/aida/ADBb0uiTJJwBLBIWhn8FK06ty2aOdRbMpg4j55V8HXZqLffT1dCqfrf8f4VXc0yJP-WzAxGouJsGXAJ8IgiUiOfvLnAunJmDo_UUXC6ypU2aM1wHqVEEOviHcWTeTalgpzNQqijCv2jWr4ibczoh-C-YVula7fw4WXx1ExUUvcEiodgQ-PMVZl9BM-IDjTIuMcYi9DNK_6tr7JbvLQ6mmpFvqSygkDgm0Qo1UvZPAEHO-0rNUnfBiTNXKBU8WPvaFy2H-55UhYPWsv9u9Q'
+                                />
+                                <div className='absolute inset-0 bg-gradient-to-t from-surface via-surface/60 to-transparent'></div>
+                            </div>
+                            <div className='relative z-10 max-w-7xl mx-auto px-8 pb-20 w-full'>
+                                <p className='font-label text-primary uppercase tracking-[0.4em] mb-4 text-xs font-bold'>
+                                    The Narrative
+                                </p>
+                                <h1 className='font-headline text-5xl md:text-8xl font-bold tracking-tight leading-[0.9] max-w-5xl'>
+                                    Architecting Digital{" "}
+                                    <span className='text-primary text-glow italic'>
+                                        Resilience
+                                    </span>
+                                    .
+                                </h1>
+                            </div>
+                            <div className='absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-primary/40 to-transparent'></div>
+                        </header>
+                        <div className='max-w-7xl mx-auto px-8 pb-32'>
+                            <section className='grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-24 mb-40'>
+                                <div className='lg:col-span-3 space-y-12'>
+                                    <div className='pt-6 border-t border-outline-variant/30'>
+                                        <p className='font-label text-[10px] uppercase text-outline tracking-widest mb-6'>
+                                            Core Identity
+                                        </p>
+                                        <div className='space-y-2 font-mono text-xs text-primary/80'>
+                                            <div>// Systems Architect</div>
+                                            <div>// Performance Optimizer</div>
+                                            <div>// Open Source Advocate</div>
+                                        </div>
+                                    </div>
+                                    <div className='pt-6 border-t border-outline-variant/30'>
+                                        <p className='font-label text-[10px] uppercase text-outline tracking-widest mb-2'>
+                                            Focus
+                                        </p>
+                                        <p className='font-body text-sm text-on-surface-variant leading-relaxed'>
+                                            The intersection of generative
+                                            systems and high-scale architecture.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div className='lg:col-span-9'>
+                                    <div className='md:columns-2 gap-16 space-y-10 text-on-surface-variant leading-relaxed font-headline font-light text-xl'>
+                                        <p className='first-letter:text-6xl first-letter:font-bold first-letter:text-primary first-letter:mr-3 first-letter:float-left first-letter:leading-none'>
+                                            I am a Senior Software Engineer
+                                            based in a world of semi-colons and
+                                            systems architecture. My journey
+                                            didn't start in a boardroom, but in
+                                            the flickering glow of a CRT
+                                            monitor.
+                                        </p>
+                                        <p>
+                                            With over a decade of experience
+                                            across fintech and distributed
+                                            systems, I view code as more than
+                                            just instructions—it’s an editorial
+                                            craft.
+                                        </p>
+                                        <div className='relative py-10 my-6'>
+                                            <div className='absolute left-0 top-0 w-12 h-px bg-primary'></div>
+                                            <p className='text-3xl font-headline font-medium text-on-surface leading-tight'>
+                                                "Architecture is not just about
+                                                structure; it's about the flow
+                                                of data as an art form."
+                                            </p>
+                                            <div className='absolute right-0 bottom-0 w-12 h-px bg-secondary'></div>
+                                        </div>
+                                        <p>
+                                            My philosophy is simple: write code
+                                            for humans first, machines second.
+                                            Currently, I am investigating the
+                                            role of LLMs in automated system
+                                            hardening.
+                                        </p>
+                                    </div>
+                                </div>
+                            </section>
+                            {/* Testimonials */}
+                            <section className='mb-48'>
+                                <div className='grid grid-cols-1 md:grid-cols-3 gap-8'>
+                                    <div className='glass-panel p-10 rounded-xl border border-primary/40 hover:border-primary transition-all duration-500 relative overflow-hidden'>
+                                        <div className='absolute top-0 right-0 p-4 font-label text-[9px] text-primary tracking-tighter select-none opacity-40'>
+                                            SYSTEM_LOG: AUTHENTICATED
+                                        </div>
+                                        <span className='material-symbols-outlined text-primary text-4xl mb-8 block'>
+                                            terminal
+                                        </span>
+                                        <p className='text-on-surface font-headline font-medium text-xl mb-10 leading-relaxed'>
+                                            "The systems built here are
+                                            structurally sound, aesthetically
+                                            brilliant, and incredibly scalable."
+                                        </p>
+                                        <div className='flex items-center gap-4 border-t border-primary/20 pt-8'>
+                                            <div className='w-12 h-12 rounded-full bg-surface-variant overflow-hidden border border-primary/40'>
+                                                <img
+                                                    className='w-full h-full object-cover'
+                                                    src='https://lh3.googleusercontent.com/aida-public/AB6AXuCgMYGsa4X1bHOh1RTOEgLx5iF-kclenp0pAEO1cahFC70kLfk1vLQhxrpuaNVdnuXHd-AHSuYbkyvI0KWiUCuD7N3DFjgbxcI85UO-mFUNJNF-jjSJITYAcY0lMuPsiVFcxPje5LmCSbBoA3Qe0-MJtwiFqYZ2s0KZLZ6aCiibFh53-kqu_uq7cCxJRnndKamQEcC_65HjdxZF06bfr9uVkZnk62AjMoM92TpvS6KqSA_0weTTCUbyw9l9n_6RFiCGjZCYzSNzjzr5'
+                                                />
+                                            </div>
+                                            <div>
+                                                <div className='font-headline font-bold text-sm'>
+                                                    Marcus Thorne
+                                                </div>
+                                                <div className='font-label text-[10px] text-outline uppercase tracking-wider'>
+                                                    VP Engineering
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </main>
+                );
+            };
+
+            const App = () => {
+                return (
+                    <MemoryRouter>
+                        <div className='min-h-screen'>
+                            <Navbar />
+                            <FloatingSidebar />
+                            <Routes>
+                                <Route path='/' element={<HomePage />} />
+                                <Route
+                                    path='/projects'
+                                    element={<ProjectsPage />}
+                                />
+                                <Route
+                                    path='/experience'
+                                    element={<ExperiencePage />}
+                                />
+                                <Route path='/about' element={<AboutPage />} />
+                            </Routes>
+                            <Footer />
+                        </div>
+                    </MemoryRouter>
+                );
+            };
+
+            const container = document.getElementById("root");
+            const root = createRoot(container);
+            root.render(<App />);
+        </script></body
+    ></html
+>
