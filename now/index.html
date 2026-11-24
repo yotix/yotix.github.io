@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yogesh Bhardwaj — Now</title>
+<meta name="description" content="What is running: Inno2grid’s platform, telemetry ingest, shared IAM and gateway control planes.">
+<link rel="canonical" href="https://yog.uno/now">
+<meta name="theme-color" content="#F4F1EA">
+<link rel="icon" href="../favicon.ico">
+<link rel="manifest" href="../manifest.json">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Yogesh Bhardwaj">
+<meta property="og:title" content="Yogesh Bhardwaj — Now">
+<meta property="og:description" content="Cloud Lead at Inno2grid, Berlin. Telemetry, IAM, real-time control planes for renewable energy, plus the interfaces on top.">
+<meta property="og:url" content="https://yog.uno/now">
+<meta property="og:image" content="https://yog.uno/logo512.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Yogesh Bhardwaj — Now">
+<meta name="twitter:description" content="Cloud Lead at Inno2grid, Berlin. Telemetry, IAM, real-time control planes for renewable energy, plus the interfaces on top.">
+<meta name="twitter:image" content="https://yog.uno/logo512.png">
+<link rel="stylesheet" href="../css/site.css">
+<script>if(location.hash.charAt(0)==="#"&&location.hash.charAt(1)==="/"){location.replace(location.hash.slice(1)+location.search);}</script>
+</head>
+<body>
+<div id="root"><div class="shell"><aside class="spine"><a class="spine-name" href="../">Yogesh Bhardwaj</a><div class="spine-role">Cloud and platform engineering, Berlin</div><nav class="spine-nav"><a href="../" class="">Index</a><a href="../work/" class="">Work</a><a href="../about/" class="">About</a><a href="../writing/" class="">Writing</a><a href="../now/" class="is-on">Now</a><a href="../contact/" class="">Contact</a></nav><div class="readout"><div class="readout-row"><span class="t-mono t-mute">Berlin</span><span class="clock">21:01</span></div><div class="readout-row"><span class="t-mono t-mute">Ledger</span><span class="t-mono">10 entries since 2014</span></div></div></aside><div class="col"><div class="main"><div class="scrollbar" aria-hidden="true" style="transform: scaleX(0);"></div><header class="hero hero-tight"><div class="hero-left"><div class="hero-eyebrow t-mono rv rv-in" data-d="0">Now</div><h1 class="hero-name rv rv-in" data-d="60"><span class="ln">What is</span><span class="ln">running</span></h1></div><div class="hero-side rv rv-in" data-d="160"><div class="hero-row"><span class="t-mono t-mute">Berlin</span><span class="clock">21:01</span></div><div class="hero-row"><span class="t-mono t-mute">Updated</span><span class="hero-val">24 Nov 2026</span></div></div></header><section class="sect"><dl class="defs"><div class="def rv rv-in" data-d="0"><dt>Building</dt><dd>Inno2grid’s platform: telemetry ingest, shared IAM and gateway control planes for energy sites across the German market, Go end to end.</dd></div><div class="def rv rv-in" data-d="60"><dt>Since</dt><dd>Feb 2021, as Cloud Lead. Thirty engineers, one shared backbone.</dd></div><div class="def rv rv-in" data-d="120"><dt>Available</dt><dd>Berlin, CET. Mon – Fri after 17:00, by mail first.</dd></div></dl></section><footer class="footer"><div class="footer-inner"><span class="t-mono t-mute">Berlin, Germany</span><a class="t-mono" href="mailto:yogesh.bhardwaj@hotmail.com" style="color: rgb(169, 74, 40); text-decoration: none;">yogesh.bhardwaj@hotmail.com</a></div></footer></div></div></div></div>
+<script>(function(){
+var rm=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+var nodes=[].slice.call(document.querySelectorAll('.rv'));
+if(rm||!('IntersectionObserver' in window)){nodes.forEach(function(n){n.classList.add('rv-in');});}
+else{nodes.forEach(function(n){n.style.transitionDelay=(parseInt(n.getAttribute('data-d')||'0',10))+'ms';});
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('rv-in');io.unobserve(e.target);}});},{rootMargin:'0px 0px -8% 0px',threshold:0.05});
+nodes.forEach(function(n){io.observe(n)});}
+if(!rm){[].slice.call(document.querySelectorAll('.stat-val')).forEach(function(node){
+var txt=(node.textContent||'').trim(),m=txt.match(/^(\d+)([\s\S]*)$/);if(!m)return;
+var to=parseInt(m[1],10),suf=m[2],dur=700,start=performance.now();
+var tick=function(now){var p=Math.min(1,(now-start)/dur);node.textContent=Math.round(to*(1-Math.pow(1-p,3)))+suf;if(p<1)requestAnimationFrame(tick);};
+requestAnimationFrame(tick);});}
+var clocks=[].slice.call(document.querySelectorAll('.clock'));
+var fmt=function(){return new Date().toLocaleTimeString('en-GB',{timeZone:'Europe/Berlin',hour12:false,hour:'2-digit',minute:'2-digit'});};
+var paintClock=function(){clocks.forEach(function(n){n.textContent=fmt();});};paintClock();setInterval(paintClock,15000);
+var bar=document.querySelector('.scrollbar');
+if(bar){var paint=function(){var h=document.documentElement,max=h.scrollHeight-h.clientHeight;
+bar.style.transform='scaleX('+(max>0?Math.min(1,h.scrollTop/max):1)+')';};paint();
+window.addEventListener('scroll',paint,{passive:true});window.addEventListener('resize',paint);}
+})();</script>
+</body></html>

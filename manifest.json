@@ -1,6 +1,9 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "name": "Yogesh Bhardwaj — Cloud Lead, Berlin",
+  "short_name": "Yogesh Bhardwaj",
+  "description": "Cloud Lead at Inno2grid, Berlin. Go-based telemetry, IAM, real-time control planes for renewable energy.",
+  "lang": "en",
+  "dir": "ltr",
   "icons": [
     {
       "src": "favicon.ico",
@@ -20,6 +23,6 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "background_color": "#F4F1EA",
+  "theme_color": "#F4F1EA"
 }
